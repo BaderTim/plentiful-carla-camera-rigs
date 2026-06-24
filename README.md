@@ -1,1 +1,0 @@
-# plentiful-carla-camera-rigs
