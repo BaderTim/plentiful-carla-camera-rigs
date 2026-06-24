@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Understanding Cross-Rig Generalization in Automotive Perception</title>
+	<script>
+		window.MathJax = {
+			tex: {
+				inlineMath: [['\\(', '\\)']],
+				displayMath: [['\\[', '\\]']]
+			},
+			svg: {
+				fontCache: 'global'
+			}
+		};
+	</script>
+	<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+	<style>
+		:root {
+			--bg: #f7f8fb;
+			--surface: #ffffff;
+			--text: #182027;
+			--muted: #5b6773;
+			--accent: #165f7a;
+			--accent-soft: #e7f2f7;
+			--line: #d7e0e6;
+			--max: 980px;
+			--radius: 14px;
+			--shadow: 0 10px 30px rgba(8, 34, 47, 0.08);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Georgia", "Times New Roman", serif;
+			color: var(--text);
+			background:
+				radial-gradient(circle at 10% 10%, #eff6fb 0%, transparent 30%),
+				radial-gradient(circle at 90% 0%, #eef8f4 0%, transparent 25%),
+				var(--bg);
+			line-height: 1.6;
+		}
+
+		.container {
+			width: min(var(--max), calc(100% - 2rem));
+			margin: 0 auto;
+		}
+
+		.hero {
+			padding: 4.5rem 0 2.5rem;
+			text-align: center;
+		}
+
+		.venue {
+			display: inline-block;
+			margin-bottom: 1rem;
+			padding: 0.3rem 0.75rem;
+			border-radius: 999px;
+			background: var(--accent-soft);
+			color: var(--accent);
+			font-size: 0.85rem;
+			letter-spacing: 0.04em;
+			font-weight: 700;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: clamp(2rem, 4vw, 3rem);
+			line-height: 1.2;
+		}
+
+		.authors {
+			margin-top: 1.3rem;
+			font-size: 1rem;
+		}
+
+		.authors a {
+			color: inherit;
+			text-decoration: none;
+			border-bottom: 1px dotted var(--line);
+		}
+
+		.authors a:hover {
+			border-bottom-color: var(--accent);
+		}
+
+		.authors span {
+			white-space: nowrap;
+		}
+
+		.links {
+			margin-top: 1.6rem;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 0.7rem;
+		}
+
+		.button-icon {
+			width: 16px;
+			height: 16px;
+			vertical-align: text-bottom;
+			margin-right: 0.45rem;
+		}
+
+		.button {
+			display: inline-block;
+			padding: 0.55rem 1rem;
+			border-radius: 999px;
+			border: 1px solid var(--line);
+			background: var(--surface);
+			color: var(--text);
+			text-decoration: none;
+			font-size: 0.95rem;
+			font-weight: 600;
+			transition: transform 0.15s ease, border-color 0.15s ease;
+		}
+
+		.button:hover {
+			transform: translateY(-1px);
+			border-color: var(--accent);
+		}
+
+		.section {
+			padding: 1.2rem 0;
+		}
+
+		.card {
+			background: var(--surface);
+			border: 1px solid var(--line);
+			border-radius: var(--radius);
+			box-shadow: var(--shadow);
+			padding: clamp(1rem, 3vw, 1.6rem);
+		}
+
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0.6rem;
+			font-size: 1.35rem;
+		}
+
+		p {
+			margin: 0.6rem 0;
+		}
+
+		.muted {
+			color: var(--muted);
+		}
+
+		figure {
+			margin: 0;
+		}
+
+		figure img {
+			width: 100%;
+			border-radius: 10px;
+			border: 1px solid var(--line);
+			display: block;
+			background: #fff;
+		}
+
+		figcaption {
+			margin-top: 0.65rem;
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+
+		.footer {
+			padding: 2rem 0 2.5rem;
+			text-align: center;
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+
+		.benchmark-figure {
+			margin: 1rem 0;
+		}
+
+		.citation-wrap {
+			position: relative;
+		}
+
+		.copy-btn {
+			position: absolute;
+			top: 0.65rem;
+			right: 0.65rem;
+			border: 1px solid var(--line);
+			background: #fdfefe;
+			color: var(--text);
+			border-radius: 8px;
+			padding: 0.35rem 0.6rem;
+			font-size: 0.85rem;
+			cursor: pointer;
+		}
+
+		.copy-btn:hover {
+			border-color: var(--accent);
+		}
+
+		pre {
+			margin: 0;
+			overflow-x: auto;
+			background: #fbfdff;
+			border: 1px solid var(--line);
+			border-radius: 10px;
+			padding: 1rem;
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+	</style>
+</head>
+<body>
+	<header class="hero container">
+		<div class="venue">Accepted at ECCV 2026</div>
+		<h1>Understanding Cross-Rig Generalization in Automotive Perception: a Multi-Rig Benchmark and Rig Variation Metrics</h1>
+		<p class="authors">
+			<span><a href="https://www.linkedin.com/in/badertim/" target="_blank" rel="noopener noreferrer">Tim Alexander Bader</a></span>
+			&middot;
+			<span><a href="https://www.linkedin.com/in/tim-dieter-eberhardt-8a27a4196/" target="_blank" rel="noopener noreferrer">Tim Dieter Eberhardt</a></span>
+			&middot;
+			<span><a href="https://www.linkedin.com/in/maximilian-dillitzer/" target="_blank" rel="noopener noreferrer">Maximilian Dillitzer</a></span>
+			&middot;
+			<span><a href="https://www.linkedin.com/in/wilhelm-stork-17731150/" target="_blank" rel="noopener noreferrer">Wilhelm Stork</a></span>
+		</p>
+		<div class="links">
+			<a class="button" href="https://huggingface.co/datasets/timb2001/plentiful-carla-camera-rigs" target="_blank" rel="noopener noreferrer">
+				<img class="button-icon" src="https://cdn.simpleicons.org/huggingface" alt="Hugging Face logo" />Dataset
+			</a>
+			<a class="button" href="https://arxiv.org/abs/0000.00000" target="_blank" rel="noopener noreferrer">
+				<img class="button-icon" src="https://cdn.simpleicons.org/arxiv" alt="arXiv logo" />Paper
+			</a>
+			<a class="button" href="https://github.com/BaderTim/plentiful-carla-camera-rigs" target="_blank" rel="noopener noreferrer">
+				<img class="button-icon" src="https://cdn.simpleicons.org/github" alt="GitHub logo" />Code
+			</a>
+		</div>
+	</header>
+
+	<main class="container">
+		<section id="abstract" class="section">
+			<div class="card">
+				<h2>Abstract</h2>
+				<p>
+					Camera-based perception systems for autonomous driving are typically developed and
+					evaluated using fixed sensor rigs, while real-world vehicle fleets exhibit substantial
+					variation in camera placement, orientation, field of view, and camera count.
+					This mismatch introduces a cross-rig domain gap in which only the geometric observation
+					process changes.
+				</p>
+				<p>
+					To study this effect under controlled conditions, we introduce Plentiful CARLA Camera Rigs,
+					a benchmark that renders identical driving scenes under 14 systematically designed camera rigs.
+					Using this benchmark, we analyze cross-rig transfer behavior of representative multi-view
+					perception architectures and observe substantial performance shifts induced by geometric rig
+					variation.
+				</p>
+				<p>
+					We further introduce Rig Variance and Rig Contrastive Distance, two calibration-based descriptors.
+					Our experiments show that geometric rig differences strongly correlate with relative cross-rig
+					performance shifts, and that Rig Contrastive Distance is a reliable proxy for transfer difficulty.
+				</p>
+			</div>
+		</section>
+
+		<section id="benchmark" class="section">
+			<div class="card">
+				<h2>Benchmark: Plentiful CARLA Camera Rigs</h2>
+				<p>
+					Plentiful CARLA Camera Rigs (PCCR) is a controlled benchmark where identical driving scenes
+					are rendered under 14 systematically designed camera rigs. By fixing scene content,
+					object layout, and environmental conditions while varying only rig geometry, the
+					benchmark isolates rig-induced cross-domain effects.
+				</p>
+				<figure class="benchmark-figure">
+					<img src="public/rigs.png" alt="Visualization of camera rigs used in the study" />
+					<figcaption>
+						The rigs of our Plentiful Carla Camera Rigs benchmark. It contains nine unique rigs (top/center) and five factor-modified control rigs of R1 (bottom). Shown are the camera FOVs and the view directions.
+				</figure>
+				<p>
+					The benchmark includes nine unique rigs and five factor-modified control rigs,
+					and is generated in CARLA 0.9.16 (+ map expansion) with deterministic trajectory replay
+					to keep scene dynamics consistent across rigs.
+				</p>
+				<p>
+					PCCR contains 115 scenes
+					across all splits (80 train/val and 30 test kept during pruning). 
+                    Each scene is 30 seconds
+					long at 2 Hz, yielding 60 samples per scene. 
+                    Across 105 cameras
+					in 14 rigs, this corresponds to 724,500 images in total.
+				</p>
+				<figure class="benchmark-figure">
+					<img src="public/distributions.png" alt="Distribution comparison plot across rigs" />
+					<figcaption>
+						Benchmark distribution of all accumulated splits of R1-c10. Shown are the category distribution (left), the object distance distribution to the ego vehicle (center) and the 3D bounding box volume distribution (right). The distribution clusters of the latter can be attributed to the different category types.
+					</figcaption>
+				</figure>
+				<p>
+					Annotation statistics are also substantial: R1-c10 contains 179,926 annotated objects
+					across 7,299 unique instances, while R1-c6 has 159,907 annotations due to
+					viewpoint-dependent visibility effects. This keeps the benchmark realistic while still
+					enforcing controlled cross-rig variation.
+				</p>
+			</div>
+		</section>
+
+		<section id="metrics" class="section">
+			<div class="card">
+				<h2>Rig Metrics: RigV and RigCD</h2>
+				<p>
+					To structure cross-rig analysis, we use two calibration-metadata-based descriptors.
+					Rig Variance (RigV) summarizes internal geometric diversity of a single rig, while
+					Rig Contrastive Distance (RigCD) measures geometric discrepancy between two rigs.
+				</p>
+				<p>
+					<strong>RigV (single rig).</strong>
+				</p>
+				<p>
+					\[
+					\mathrm{RigV}(R) = V_{\text{internal}}(R) + \lambda\,\bigl(1 - \mathrm{Overlap}(R)\bigr)
+					\]
+				</p>
+				<p>
+					Here, \(V_{\text{internal}}\) captures spread in camera placement, orientation, and field of view,
+					while \(\mathrm{Overlap}\) captures inter-camera shared coverage.
+				</p>
+				<p>
+					<strong>RigCD (rig pair).</strong>
+				</p>
+				<p>
+					\[
+					\mathrm{RigCD}(R_a, R_b) = d_{\text{calib}}(R_a, R_b) + \alpha\,d_{\text{coverage}}(R_a, R_b)
+					\]
+				</p>
+				<p>
+					Here, \(d_{\text{calib}}\) captures differences in intrinsics and extrinsics,
+					and \(d_{\text{coverage}}\) captures directional and spatial coverage mismatch.
+				</p>
+			</div>
+		</section>
+
+		<section id="citation" class="section">
+			<div class="card">
+				<h2>Citation</h2>
+				<p>
+					Please use the following BibTeX entry to cite our work:
+				</p>
+				<div class="citation-wrap">
+					<button class="copy-btn" id="copy-citation" type="button">Copy</button>
+					<pre><code id="citation-bib">@inproceedings{bader2026crossrig,
+  title     = {Understanding Cross-Rig Generalization in Automotive Perception: a Multi-Rig Benchmark and Rig Variation Metrics},
+  author    = {Bader, Tim Alexander and Eberhardt, Tim Dieter and Dillitzer, Maximilian and Stork, Wilhelm},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026},
+  note      = {Project page: https://timbader.github.io/PCCR/}
+}</code></pre>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer container">
+		<p>
+			Understanding Cross-Rig Generalization in Automotive Perception: a Multi-Rig Benchmark and Rig Variation Metrics.
+		</p>
+	</footer>
+	<script>
+		const copyBtn = document.getElementById('copy-citation');
+		const bib = document.getElementById('citation-bib');
+
+		if (copyBtn && bib) {
+			copyBtn.addEventListener('click', async () => {
+				try {
+					await navigator.clipboard.writeText(bib.innerText);
+					copyBtn.textContent = 'Copied';
+				} catch (err) {
+					copyBtn.textContent = 'Copy failed';
+				}
+				setTimeout(() => {
+					copyBtn.textContent = 'Copy';
+				}, 1400);
+			});
+		}
+	</script>
+</body>
+</html>
