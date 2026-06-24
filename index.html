@@ -228,6 +228,17 @@
 			font-size: 0.9rem;
 			line-height: 1.5;
 		}
+
+		.equation-scroll {
+			overflow-x: auto;
+			overflow-y: hidden;
+			-webkit-overflow-scrolling: touch;
+			padding-bottom: 0.2rem;
+		}
+
+		.equation-scroll mjx-container[jax="SVG"][display="true"] {
+			min-width: max-content;
+		}
 	</style>
 </head>
 <body>
@@ -295,6 +306,7 @@
 					<img src="public/rigs.png" alt="Visualization of camera rigs used in the study" />
 					<figcaption>
 						The rigs of our Plentiful Carla Camera Rigs benchmark. It contains nine unique rigs (top/center) and five factor-modified control rigs of R1 (bottom). Shown are the camera FOVs and the view directions.
+					</figcaption>
 				</figure>
 				<p>
 					The benchmark includes nine unique rigs and five factor-modified control rigs,
@@ -335,11 +347,11 @@
 				<p>
 					<strong>RigV (single rig).</strong>
 				</p>
-				<p>
+				<div class="equation-scroll">
 					\[
 					\mathrm{RigV}(R) = V_{\text{internal}}(R) + \lambda\,\bigl(1 - \mathrm{Overlap}(R)\bigr)
 					\]
-				</p>
+				</div>
 				<p>
 					Here, \(V_{\text{internal}}\) captures spread in camera placement, orientation, and field of view,
 					while \(\mathrm{Overlap}\) captures inter-camera shared coverage.
@@ -347,11 +359,11 @@
 				<p>
 					<strong>RigCD (rig pair).</strong>
 				</p>
-				<p>
+				<div class="equation-scroll">
 					\[
 					\mathrm{RigCD}(R_a, R_b) = d_{\text{calib}}(R_a, R_b) + \alpha\,d_{\text{coverage}}(R_a, R_b)
 					\]
-				</p>
+				</div>
 				<p>
 					Here, \(d_{\text{calib}}\) captures differences in intrinsics and extrinsics,
 					and \(d_{\text{coverage}}\) captures directional and spatial coverage mismatch.
