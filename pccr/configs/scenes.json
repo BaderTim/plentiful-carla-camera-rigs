@@ -1,0 +1,1128 @@
+{
+  "statistics": {
+    "train": {
+      "num_scenes": 80,
+      "maps": {
+        "Town02": 20,
+        "Town05": 19,
+        "Town01": 10,
+        "Town04": 16,
+        "Town10HD": 15
+      },
+      "weather": {
+        "SoftRainNoon": 9,
+        "ClearSunset": 13,
+        "ClearNoon": 10,
+        "MidRainSunset": 5,
+        "HardRainSunset": 7,
+        "WetNoon": 6,
+        "CloudyNoon": 7,
+        "CloudySunset": 5,
+        "HardRainNoon": 5,
+        "WetCloudyNoon": 6,
+        "MidRainyNoon": 5,
+        "WetSunset": 2
+      },
+      "traffic_density": {
+        "0.2": 20,
+        "0.4": 19,
+        "0.8": 19,
+        "0.6": 22
+      }
+    },
+    "val": {
+      "num_scenes": 20,
+      "maps": {
+        "Town01": 10,
+        "Town10HD": 10
+      },
+      "weather": {
+        "HardRainNoon": 3,
+        "MidRainSunset": 3,
+        "WetSunset": 4,
+        "ClearSunset": 3,
+        "HardRainSunset": 2,
+        "CloudyNoon": 1,
+        "SoftRainNoon": 1,
+        "MidRainyNoon": 1,
+        "WetNoon": 1,
+        "CloudySunset": 1
+      },
+      "traffic_density": {
+        "0.45": 6,
+        "0.25": 6,
+        "0.65": 8
+      }
+    },
+    "test": {
+      "num_scenes": 40,
+      "maps": {
+        "Town06": 14,
+        "Town07": 12,
+        "Town03": 14
+      },
+      "weather": {
+        "MidRainyNoon": 1,
+        "ClearSunset": 6,
+        "SoftRainNoon": 3,
+        "ClearNoon": 4,
+        "HardRainNoon": 1,
+        "WetNoon": 3,
+        "WetSunset": 5,
+        "CloudyNoon": 4,
+        "WetCloudyNoon": 5,
+        "SoftRainSunset": 5,
+        "HardRainSunset": 3
+      },
+      "traffic_density": {
+        "0.35": 6,
+        "0.9": 12,
+        "0.69": 9,
+        "0.42": 9,
+        "0.1": 4
+      }
+    },
+    "mini": {
+      "num_scenes": 5,
+      "maps": {
+        "Town10HD": 3,
+        "Town01": 2
+      },
+      "weather": {
+        "MidRainyNoon": 1,
+        "ClearNoon": 3,
+        "ClearSunset": 1
+      },
+      "traffic_density": {
+        "0.3": 2,
+        "0.7": 1,
+        "0.5": 2
+      }
+    }
+  },
+  "scenes": {
+    "train": [
+      {
+        "id": "train_01",
+        "map": "Town02",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 92
+      },
+      {
+        "id": "train_02",
+        "map": "Town05",
+        "weather": "ClearSunset",
+        "traffic_density": 0.4,
+        "spawn_point": 46
+      },
+      {
+        "id": "train_03",
+        "map": "Town01",
+        "weather": "ClearNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 140
+      },
+      {
+        "id": "train_04",
+        "map": "Town04",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 113
+      },
+      {
+        "id": "train_05",
+        "map": "Town10HD",
+        "weather": "ClearSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 70
+      },
+      {
+        "id": "train_06",
+        "map": "Town02",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 33
+      },
+      {
+        "id": "train_07",
+        "map": "Town02",
+        "weather": "ClearNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 34
+      },
+      {
+        "id": "train_08",
+        "map": "Town02",
+        "weather": "WetNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 37
+      },
+      {
+        "id": "train_09",
+        "map": "Town04",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 343
+      },
+      {
+        "id": "train_10",
+        "map": "Town05",
+        "weather": "ClearSunset",
+        "traffic_density": 0.4,
+        "spawn_point": 91
+      },
+      {
+        "id": "train_11",
+        "map": "Town02",
+        "weather": "ClearSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 11
+      },
+      {
+        "id": "train_12",
+        "map": "Town10HD",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 1
+      },
+      {
+        "id": "train_13",
+        "map": "Town04",
+        "weather": "CloudySunset",
+        "traffic_density": 0.6,
+        "spawn_point": 260
+      },
+      {
+        "id": "train_14",
+        "map": "Town02",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 76
+      },
+      {
+        "id": "train_15",
+        "map": "Town04",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 82
+      },
+      {
+        "id": "train_16",
+        "map": "Town02",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 5
+      },
+      {
+        "id": "train_17",
+        "map": "Town01",
+        "weather": "ClearNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 160
+      },
+      {
+        "id": "train_18",
+        "map": "Town04",
+        "weather": "ClearSunset",
+        "traffic_density": 0.8,
+        "spawn_point": 358
+      },
+      {
+        "id": "train_19",
+        "map": "Town04",
+        "weather": "WetNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 34
+      },
+      {
+        "id": "train_20",
+        "map": "Town05",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 141
+      },
+      {
+        "id": "train_21",
+        "map": "Town02",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 95
+      },
+      {
+        "id": "train_22",
+        "map": "Town10HD",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 82
+      },
+      {
+        "id": "train_23",
+        "map": "Town01",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 181
+      },
+      {
+        "id": "train_24",
+        "map": "Town02",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 15
+      },
+      {
+        "id": "train_25",
+        "map": "Town04",
+        "weather": "WetNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 235
+      },
+      {
+        "id": "train_26",
+        "map": "Town01",
+        "weather": "ClearNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 178
+      },
+      {
+        "id": "train_27",
+        "map": "Town01",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 4
+      },
+      {
+        "id": "train_28",
+        "map": "Town04",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 78
+      },
+      {
+        "id": "train_29",
+        "map": "Town05",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 150
+      },
+      {
+        "id": "train_30",
+        "map": "Town10HD",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 74
+      },
+      {
+        "id": "train_31",
+        "map": "Town02",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 76
+      },
+      {
+        "id": "train_32",
+        "map": "Town02",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 46
+      },
+      {
+        "id": "train_33",
+        "map": "Town01",
+        "weather": "ClearSunset",
+        "traffic_density": 0.4,
+        "spawn_point": 93
+      },
+      {
+        "id": "train_34",
+        "map": "Town04",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 224
+      },
+      {
+        "id": "train_35",
+        "map": "Town02",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 14
+      },
+      {
+        "id": "train_36",
+        "map": "Town01",
+        "weather": "ClearNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 188
+      },
+      {
+        "id": "train_37",
+        "map": "Town02",
+        "weather": "CloudySunset",
+        "traffic_density": 0.4,
+        "spawn_point": 77
+      },
+      {
+        "id": "train_38",
+        "map": "Town01",
+        "weather": "ClearSunset",
+        "traffic_density": 0.8,
+        "spawn_point": 149
+      },
+      {
+        "id": "train_39",
+        "map": "Town02",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 15
+      },
+      {
+        "id": "train_40",
+        "map": "Town10HD",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 51
+      },
+      {
+        "id": "train_41",
+        "map": "Town05",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 224
+      },
+      {
+        "id": "train_42",
+        "map": "Town05",
+        "weather": "ClearSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 112
+      },
+      {
+        "id": "train_43",
+        "map": "Town05",
+        "weather": "ClearSunset",
+        "traffic_density": 0.4,
+        "spawn_point": 219
+      },
+      {
+        "id": "train_44",
+        "map": "Town02",
+        "weather": "ClearSunset",
+        "traffic_density": 0.4,
+        "spawn_point": 4
+      },
+      {
+        "id": "train_45",
+        "map": "Town01",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 62
+      },
+      {
+        "id": "train_46",
+        "map": "Town10HD",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 106
+      },
+      {
+        "id": "train_47",
+        "map": "Town04",
+        "weather": "WetNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 26
+      },
+      {
+        "id": "train_48",
+        "map": "Town04",
+        "weather": "CloudySunset",
+        "traffic_density": 0.2,
+        "spawn_point": 291
+      },
+      {
+        "id": "train_49",
+        "map": "Town05",
+        "weather": "WetSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 253
+      },
+      {
+        "id": "train_50",
+        "map": "Town05",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 107
+      },
+      {
+        "id": "train_51",
+        "map": "Town10HD",
+        "weather": "WetNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 75
+      },
+      {
+        "id": "train_52",
+        "map": "Town05",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 215
+      },
+      {
+        "id": "train_53",
+        "map": "Town10HD",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 86
+      },
+      {
+        "id": "train_54",
+        "map": "Town05",
+        "weather": "ClearSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 143
+      },
+      {
+        "id": "train_55",
+        "map": "Town02",
+        "weather": "ClearNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 79
+      },
+      {
+        "id": "train_56",
+        "map": "Town02",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 85
+      },
+      {
+        "id": "train_57",
+        "map": "Town01",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.4,
+        "spawn_point": 176
+      },
+      {
+        "id": "train_58",
+        "map": "Town05",
+        "weather": "CloudySunset",
+        "traffic_density": 0.8,
+        "spawn_point": 206
+      },
+      {
+        "id": "train_59",
+        "map": "Town05",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 108
+      },
+      {
+        "id": "train_60",
+        "map": "Town02",
+        "weather": "ClearNoon",
+        "traffic_density": 0.6,
+        "spawn_point": 14
+      },
+      {
+        "id": "train_61",
+        "map": "Town05",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.8,
+        "spawn_point": 113
+      },
+      {
+        "id": "train_62",
+        "map": "Town10HD",
+        "weather": "ClearNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 41
+      },
+      {
+        "id": "train_63",
+        "map": "Town10HD",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 134
+      },
+      {
+        "id": "train_64",
+        "map": "Town05",
+        "weather": "ClearNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 17
+      },
+      {
+        "id": "train_65",
+        "map": "Town10HD",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 143
+      },
+      {
+        "id": "train_66",
+        "map": "Town04",
+        "weather": "CloudySunset",
+        "traffic_density": 0.4,
+        "spawn_point": 21
+      },
+      {
+        "id": "train_67",
+        "map": "Town04",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 152
+      },
+      {
+        "id": "train_68",
+        "map": "Town04",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 43
+      },
+      {
+        "id": "train_69",
+        "map": "Town10HD",
+        "weather": "ClearSunset",
+        "traffic_density": 0.8,
+        "spawn_point": 52
+      },
+      {
+        "id": "train_70",
+        "map": "Town04",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 249
+      },
+      {
+        "id": "train_71",
+        "map": "Town05",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 58
+      },
+      {
+        "id": "train_72",
+        "map": "Town10HD",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 131
+      },
+      {
+        "id": "train_73",
+        "map": "Town05",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.8,
+        "spawn_point": 34
+      },
+      {
+        "id": "train_74",
+        "map": "Town02",
+        "weather": "WetSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 61
+      },
+      {
+        "id": "train_75",
+        "map": "Town05",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 190
+      },
+      {
+        "id": "train_76",
+        "map": "Town02",
+        "weather": "WetNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 41
+      },
+      {
+        "id": "train_77",
+        "map": "Town05",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.6,
+        "spawn_point": 132
+      },
+      {
+        "id": "train_78",
+        "map": "Town10HD",
+        "weather": "ClearNoon",
+        "traffic_density": 0.4,
+        "spawn_point": 1
+      },
+      {
+        "id": "train_79",
+        "map": "Town04",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.2,
+        "spawn_point": 249
+      },
+      {
+        "id": "train_80",
+        "map": "Town10HD",
+        "weather": "ClearSunset",
+        "traffic_density": 0.2,
+        "spawn_point": 133
+      }
+    ],
+    "val": [
+      {
+        "id": "val_01",
+        "map": "Town01",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.45,
+        "spawn_point": 91
+      },
+      {
+        "id": "val_02",
+        "map": "Town01",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.25,
+        "spawn_point": 252
+      },
+      {
+        "id": "val_03",
+        "map": "Town01",
+        "weather": "WetSunset",
+        "traffic_density": 0.25,
+        "spawn_point": 156
+      },
+      {
+        "id": "val_04",
+        "map": "Town10HD",
+        "weather": "ClearSunset",
+        "traffic_density": 0.45,
+        "spawn_point": 145
+      },
+      {
+        "id": "val_05",
+        "map": "Town10HD",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.65,
+        "spawn_point": 112
+      },
+      {
+        "id": "val_06",
+        "map": "Town10HD",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.25,
+        "spawn_point": 64
+      },
+      {
+        "id": "val_07",
+        "map": "Town10HD",
+        "weather": "WetSunset",
+        "traffic_density": 0.45,
+        "spawn_point": 34
+      },
+      {
+        "id": "val_08",
+        "map": "Town10HD",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.65,
+        "spawn_point": 36
+      },
+      {
+        "id": "val_09",
+        "map": "Town01",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.45,
+        "spawn_point": 50
+      },
+      {
+        "id": "val_10",
+        "map": "Town10HD",
+        "weather": "WetSunset",
+        "traffic_density": 0.65,
+        "spawn_point": 23
+      },
+      {
+        "id": "val_11",
+        "map": "Town01",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.65,
+        "spawn_point": 239
+      },
+      {
+        "id": "val_12",
+        "map": "Town01",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.65,
+        "spawn_point": 95
+      },
+      {
+        "id": "val_13",
+        "map": "Town10HD",
+        "weather": "WetNoon",
+        "traffic_density": 0.45,
+        "spawn_point": 5
+      },
+      {
+        "id": "val_14",
+        "map": "Town01",
+        "weather": "ClearSunset",
+        "traffic_density": 0.25,
+        "spawn_point": 205
+      },
+      {
+        "id": "val_15",
+        "map": "Town10HD",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.25,
+        "spawn_point": 40
+      },
+      {
+        "id": "val_16",
+        "map": "Town01",
+        "weather": "CloudySunset",
+        "traffic_density": 0.45,
+        "spawn_point": 169
+      },
+      {
+        "id": "val_17",
+        "map": "Town01",
+        "weather": "MidRainSunset",
+        "traffic_density": 0.25,
+        "spawn_point": 44
+      },
+      {
+        "id": "val_18",
+        "map": "Town10HD",
+        "weather": "WetSunset",
+        "traffic_density": 0.65,
+        "spawn_point": 56
+      },
+      {
+        "id": "val_19",
+        "map": "Town10HD",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.65,
+        "spawn_point": 103
+      },
+      {
+        "id": "val_20",
+        "map": "Town01",
+        "weather": "ClearSunset",
+        "traffic_density": 0.65,
+        "spawn_point": 56
+      }
+    ],
+    "test": [
+      {
+        "id": "test_01",
+        "map": "Town06",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.35,
+        "spawn_point": 381
+      },
+      {
+        "id": "test_02",
+        "map": "Town06",
+        "weather": "ClearSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 231
+      },
+      {
+        "id": "test_03",
+        "map": "Town06",
+        "weather": "ClearSunset",
+        "traffic_density": 0.69,
+        "spawn_point": 418
+      },
+      {
+        "id": "test_04",
+        "map": "Town06",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.69,
+        "spawn_point": 210
+      },
+      {
+        "id": "test_05",
+        "map": "Town07",
+        "weather": "ClearNoon",
+        "traffic_density": 0.42,
+        "spawn_point": 23
+      },
+      {
+        "id": "test_06",
+        "map": "Town07",
+        "weather": "ClearSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 78
+      },
+      {
+        "id": "test_07",
+        "map": "Town06",
+        "weather": "HardRainNoon",
+        "traffic_density": 0.69,
+        "spawn_point": 319
+      },
+      {
+        "id": "test_08",
+        "map": "Town03",
+        "weather": "WetNoon",
+        "traffic_density": 0.9,
+        "spawn_point": 34
+      },
+      {
+        "id": "test_09",
+        "map": "Town06",
+        "weather": "WetSunset",
+        "traffic_density": 0.42,
+        "spawn_point": 309
+      },
+      {
+        "id": "test_10",
+        "map": "Town06",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.42,
+        "spawn_point": 247
+      },
+      {
+        "id": "test_11",
+        "map": "Town03",
+        "weather": "WetSunset",
+        "traffic_density": 0.69,
+        "spawn_point": 33
+      },
+      {
+        "id": "test_12",
+        "map": "Town03",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.1,
+        "spawn_point": 153
+      },
+      {
+        "id": "test_13",
+        "map": "Town03",
+        "weather": "ClearNoon",
+        "traffic_density": 0.35,
+        "spawn_point": 203
+      },
+      {
+        "id": "test_14",
+        "map": "Town07",
+        "weather": "WetSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 70
+      },
+      {
+        "id": "test_15",
+        "map": "Town07",
+        "weather": "ClearSunset",
+        "traffic_density": 0.42,
+        "spawn_point": 2
+      },
+      {
+        "id": "test_16",
+        "map": "Town07",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.35,
+        "spawn_point": 96
+      },
+      {
+        "id": "test_17",
+        "map": "Town03",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.1,
+        "spawn_point": 162
+      },
+      {
+        "id": "test_18",
+        "map": "Town03",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.42,
+        "spawn_point": 31
+      },
+      {
+        "id": "test_19",
+        "map": "Town07",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.9,
+        "spawn_point": 113
+      },
+      {
+        "id": "test_20",
+        "map": "Town07",
+        "weather": "SoftRainSunset",
+        "traffic_density": 0.35,
+        "spawn_point": 93
+      },
+      {
+        "id": "test_21",
+        "map": "Town03",
+        "weather": "WetSunset",
+        "traffic_density": 0.69,
+        "spawn_point": 66
+      },
+      {
+        "id": "test_22",
+        "map": "Town07",
+        "weather": "SoftRainSunset",
+        "traffic_density": 0.1,
+        "spawn_point": 71
+      },
+      {
+        "id": "test_23",
+        "map": "Town06",
+        "weather": "SoftRainSunset",
+        "traffic_density": 0.1,
+        "spawn_point": 370
+      },
+      {
+        "id": "test_24",
+        "map": "Town07",
+        "weather": "WetNoon",
+        "traffic_density": 0.9,
+        "spawn_point": 52
+      },
+      {
+        "id": "test_25",
+        "map": "Town03",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.42,
+        "spawn_point": 247
+      },
+      {
+        "id": "test_26",
+        "map": "Town07",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.69,
+        "spawn_point": 21
+      },
+      {
+        "id": "test_27",
+        "map": "Town03",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.42,
+        "spawn_point": 263
+      },
+      {
+        "id": "test_28",
+        "map": "Town06",
+        "weather": "ClearSunset",
+        "traffic_density": 0.42,
+        "spawn_point": 205
+      },
+      {
+        "id": "test_29",
+        "map": "Town06",
+        "weather": "WetNoon",
+        "traffic_density": 0.69,
+        "spawn_point": 31
+      },
+      {
+        "id": "test_30",
+        "map": "Town06",
+        "weather": "ClearNoon",
+        "traffic_density": 0.42,
+        "spawn_point": 346
+      },
+      {
+        "id": "test_31",
+        "map": "Town03",
+        "weather": "SoftRainNoon",
+        "traffic_density": 0.35,
+        "spawn_point": 43
+      },
+      {
+        "id": "test_32",
+        "map": "Town03",
+        "weather": "CloudyNoon",
+        "traffic_density": 0.9,
+        "spawn_point": 7
+      },
+      {
+        "id": "test_33",
+        "map": "Town03",
+        "weather": "WetCloudyNoon",
+        "traffic_density": 0.9,
+        "spawn_point": 4
+      },
+      {
+        "id": "test_34",
+        "map": "Town06",
+        "weather": "SoftRainSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 94
+      },
+      {
+        "id": "test_35",
+        "map": "Town06",
+        "weather": "SoftRainSunset",
+        "traffic_density": 0.69,
+        "spawn_point": 172
+      },
+      {
+        "id": "test_36",
+        "map": "Town03",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 96
+      },
+      {
+        "id": "test_37",
+        "map": "Town03",
+        "weather": "ClearSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 182
+      },
+      {
+        "id": "test_38",
+        "map": "Town06",
+        "weather": "WetSunset",
+        "traffic_density": 0.69,
+        "spawn_point": 307
+      },
+      {
+        "id": "test_39",
+        "map": "Town07",
+        "weather": "ClearNoon",
+        "traffic_density": 0.35,
+        "spawn_point": 32
+      },
+      {
+        "id": "test_40",
+        "map": "Town07",
+        "weather": "HardRainSunset",
+        "traffic_density": 0.9,
+        "spawn_point": 39
+      }
+    ],
+    "mini": [
+      {
+        "id": "mini_01",
+        "map": "Town10HD",
+        "weather": "MidRainyNoon",
+        "traffic_density": 0.3,
+        "spawn_point": 60
+      },
+      {
+        "id": "mini_02",
+        "map": "Town10HD",
+        "weather": "ClearNoon",
+        "traffic_density": 0.7,
+        "spawn_point": 9
+      },
+      {
+        "id": "mini_03",
+        "map": "Town10HD",
+        "weather": "ClearSunset",
+        "traffic_density": 0.5,
+        "spawn_point": 20
+      },
+      {
+        "id": "mini_04",
+        "map": "Town01",
+        "weather": "ClearNoon",
+        "traffic_density": 0.5,
+        "spawn_point": 132
+      },
+      {
+        "id": "mini_05",
+        "map": "Town01",
+        "weather": "ClearNoon",
+        "traffic_density": 0.3,
+        "spawn_point": 173
+      }
+    ]
+  }
+}

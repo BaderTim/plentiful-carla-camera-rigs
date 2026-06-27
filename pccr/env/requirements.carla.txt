@@ -1,0 +1,26 @@
+# Host-side requirements for CARLA data generation and interactive tools.
+# Used when running core/ scripts and tools/ directly on the host (Python 3.10+).
+#
+# Install with:
+#   pip install -r env/requirements.host.txt
+#
+# Note: the 'carla' package requires CARLA 0.9.16 to be installed separately.
+# See README.md for setup instructions.
+
+# CARLA Python API (matches simulator version 0.9.16)
+carla==0.9.16
+
+# Numerical / data
+numpy
+h5py
+pandas
+
+# Image handling
+Pillow
+seaborn
+matplotlib
+fiftyone
+
+# Interactive sensor tool (tools/debug/interactive_sensor_tool.py,
+#                          tools/debug/annotation_debug_tool.py)
+pygame

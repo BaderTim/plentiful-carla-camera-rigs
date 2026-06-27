@@ -1,0 +1,105 @@
+{
+  "vehicle_type": "vehicle.audi.tt",
+  "cameras": [
+    {
+      "id": "CAM_WINDSHIELD_FRONT",
+      "location": [
+        0.18,
+        0.0,
+        1.38
+      ],
+      "rotation": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "fov": 120
+    },
+    {
+      "id": "CAM_MIRROR_LEFT",
+      "location": [
+        0.38,
+        -0.92,
+        0.98
+      ],
+      "rotation": [
+        0.0,
+        -76.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_MIRROR_RIGHT",
+      "location": [
+        0.38,
+        0.92,
+        0.98
+      ],
+      "rotation": [
+        0.0,
+        75.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_FENDER_FRONT_LEFT",
+      "location": [
+        1.02,
+        -0.98,
+        0.76
+      ],
+      "rotation": [
+        0.0,
+        214.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_FENDER_FRONT_RIGHT",
+      "location": [
+        1.0,
+        0.96,
+        0.76
+      ],
+      "rotation": [
+        0.0,
+        145.5,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPER_BACK",
+      "location": [
+        -2.12,
+        0.0,
+        0.6
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "fov": 100
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      -0.22,
+      0.0,
+      1.5
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 1390000
+  }
+}

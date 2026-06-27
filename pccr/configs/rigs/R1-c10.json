@@ -1,0 +1,162 @@
+{
+  "vehicle_type": "vehicle.audi.etron",
+  "cameras": [
+    {
+      "id": "CAM_BUMPER_FRONT",
+      "location": [
+        2.36,
+        0.0,
+        0.68
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_FENDER_FRONT_RIGHT",
+      "location": [
+        1.09,
+        0.99,
+        0.72
+      ],
+      "rotation": [
+        0.0,
+        41.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_MIRROR_FRONT_RIGHT",
+      "location": [
+        0.69,
+        0.97,
+        0.98
+      ],
+      "rotation": [
+        0.0,
+        149.5,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_SIDE_RIGHT",
+      "location": [
+        -0.22,
+        0.74,
+        1.4
+      ],
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_FENDER_BACK_RIGHT",
+      "location": [
+        -1.57,
+        0.99,
+        0.84
+      ],
+      "rotation": [
+        0.0,
+        135.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPER_BACK",
+      "location": [
+        -2.44,
+        0.0,
+        0.64
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_FENDER_BACK_LEFT",
+      "location": [
+        -1.63,
+        -0.99,
+        0.86
+      ],
+      "rotation": [
+        0.0,
+        -135.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_SIDE_LEFT",
+      "location": [
+        -0.2,
+        -0.78,
+        1.4
+      ],
+      "rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_MIRROR_FRONT_LEFT",
+      "location": [
+        0.65,
+        -1.01,
+        0.96
+      ],
+      "rotation": [
+        0.0,
+        -151.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_FENDER_FRONT_LEFT",
+      "location": [
+        1.23,
+        -0.95,
+        0.78
+      ],
+      "rotation": [
+        0.0,
+        -43.0,
+        0.0
+      ],
+      "fov": 65
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      -0.46,
+      0.0,
+      1.86
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 56000,
+    "rotation_frequency": 10.0
+  }
+}

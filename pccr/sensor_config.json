@@ -1,0 +1,120 @@
+{
+  "vehicle_type": "vehicle.carlamotors.european_hgv",
+  "cameras": [
+    {
+      "id": "CAM_FRONT",
+      "location": [
+        3.98,
+        0.0,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 120
+    },
+    {
+      "id": "CAM_FRONT_TOP",
+      "location": [
+        3.46,
+        0.0,
+        3.34
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_MIRROR_RIGHT",
+      "location": [
+        3.32,
+        1.56,
+        2.14
+      ],
+      "rotation": [
+        0.0,
+        67.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_FRONT_RIGHT",
+      "location": [
+        3.62,
+        1.4,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        142.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_BACK_TOP",
+      "location": [
+        1.76,
+        0.0,
+        3.26
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_FRONT_LEFT",
+      "location": [
+        3.66,
+        -1.38,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        219.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_MIRROR_LEFT",
+      "location": [
+        3.36,
+        -1.52,
+        2.12
+      ],
+      "rotation": [
+        0.0,
+        295.0,
+        0.0
+      ],
+      "fov": 75
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      2.6,
+      0.0,
+      4.18
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 56000,
+    "rotation_frequency": 10.0
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "vehicle_type": "vehicle.audi.etron",
+  "cameras": [
+    {
+      "id": "CAM_WINDSHIELD_FRONT",
+      "location": [
+        0.66,
+        0.0,
+        1.48
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_BUMPER_FRONT_LEFT",
+      "location": [
+        2.36,
+        -0.46,
+        0.5
+      ],
+      "rotation": [
+        0.0,
+        -30.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_BUMPER_FRONT_RIGHT",
+      "location": [
+        2.38,
+        0.48,
+        0.5
+      ],
+      "rotation": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_MIRROR_LEFT",
+      "location": [
+        0.72,
+        -0.92,
+        1.08
+      ],
+      "rotation": [
+        0.0,
+        -69.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_FRONT_LEFT",
+      "location": [
+        1.0,
+        -0.96,
+        0.78
+      ],
+      "rotation": [
+        0.0,
+        -143.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_BUMPER_BACK_LEFT",
+      "location": [
+        -2.2,
+        -0.72,
+        0.8
+      ],
+      "rotation": [
+        0.0,
+        -144.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_WINDSHIELD_BACK",
+      "location": [
+        -1.88,
+        0.0,
+        1.42
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_BUMPER_BACK_RIGHT",
+      "location": [
+        -2.18,
+        0.76,
+        0.76
+      ],
+      "rotation": [
+        0.0,
+        145.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_FRONT_RIGHT",
+      "location": [
+        0.9,
+        1.0,
+        0.98
+      ],
+      "rotation": [
+        0.0,
+        144.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_MIRROR_RIGHT",
+      "location": [
+        0.68,
+        0.9,
+        1.04
+      ],
+      "rotation": [
+        0.0,
+        69.0,
+        0.0
+      ],
+      "fov": 75
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      -0.46,
+      0.0,
+      1.86
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 1390000
+  }
+}

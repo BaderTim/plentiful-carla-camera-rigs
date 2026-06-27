@@ -1,0 +1,9 @@
+{
+  "num_model_average_files": 4,
+  "num_results": 784,
+  "num_results_without_map": 0,
+  "num_train_runs": 56,
+  "output_root": "results",
+  "raw_root": "results_raw",
+  "write_per_test_files": false
+}

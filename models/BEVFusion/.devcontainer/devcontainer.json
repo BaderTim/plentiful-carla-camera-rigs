@@ -1,0 +1,37 @@
+{
+  "name": "bevfusion",
+  "build": { "dockerfile": "../Dockerfile" },
+
+  "runArgs": ["--gpus", "all", "--shm-size=16g"],
+
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "mounts": [
+    "source=/media/timbader/bigboi/pccr/data,target=/data,type=bind"
+    //"source=/home/timbader/Projects/plentiful-carla-camera-rigs/output/data,target=/data,type=bind"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "python.analysis.typeCheckingMode": "basic",
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.inlayHints.variableTypes": true,
+        "python.analysis.inlayHints.functionReturnTypes": true,
+        "jupyter.jupyterServerType": "local",
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/postcreate.sh",
+
+  "forwardPorts": [8888]
+}

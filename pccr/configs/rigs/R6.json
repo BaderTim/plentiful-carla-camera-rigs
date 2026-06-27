@@ -1,0 +1,147 @@
+{
+  "vehicle_type": "vehicle.carlamotors.firetruck",
+  "cameras": [
+    {
+      "id": "CAM_FRONT",
+      "location": [
+        3.98,
+        0.0,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 120
+    },
+    {
+      "id": "CAM_FRONT_TOP",
+      "location": [
+        3.64,
+        0.0,
+        3.34
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_MIRROR_RIGHT",
+      "location": [
+        3.32,
+        1.56,
+        2.08
+      ],
+      "rotation": [
+        0.0,
+        67.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_FRONT_RIGHT",
+      "location": [
+        3.62,
+        1.46,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        142.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_BACK_RIGHT",
+      "location": [
+        -2.08,
+        1.44,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        143.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_BACK",
+      "location": [
+        -4.4,
+        0.0,
+        0.86
+      ],
+      "rotation": [
+        0.0,
+        182.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_BACK_LEFT",
+      "location": [
+        -2.06,
+        -1.5,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        218.0,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_FENDER_FRONT_LEFT",
+      "location": [
+        3.66,
+        -1.42,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        219.5,
+        0.0
+      ],
+      "fov": 75
+    },
+    {
+      "id": "CAM_MIRROR_LEFT",
+      "location": [
+        3.36,
+        -1.52,
+        2.08
+      ],
+      "rotation": [
+        0.0,
+        295.0,
+        0.0
+      ],
+      "fov": 75
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      -0.36,
+      0.0,
+      4.8
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 1390000
+  }
+}

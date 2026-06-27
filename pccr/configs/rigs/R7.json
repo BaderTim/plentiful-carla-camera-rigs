@@ -1,0 +1,119 @@
+{
+  "vehicle_type": "vehicle.audi.etron",
+  "cameras": [
+    {
+      "id": "CAM_WINDSHIELD_FRONT",
+      "location": [
+        0.75,
+        0.0,
+        1.42
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 120
+    },
+    {
+      "id": "CAM_FENDER_FRONT_LEFT",
+      "location": [
+        1.02,
+        -1.0,
+        0.94
+      ],
+      "rotation": [
+        0.0,
+        -146.0,
+        0.0
+      ],
+      "fov": 70
+    },
+    {
+      "id": "CAM_BUMPER_FRONT",
+      "location": [
+        2.54,
+        0.0,
+        0.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 70
+    },
+    {
+      "id": "CAM_FENDER_FRONT_RIGHT",
+      "location": [
+        1.0,
+        0.96,
+        0.94
+      ],
+      "rotation": [
+        0.0,
+        146.0,
+        0.0
+      ],
+      "fov": 70
+    },
+    {
+      "id": "CAM_MIRROR_LEFT",
+      "location": [
+        0.66,
+        -1.0,
+        1.1
+      ],
+      "rotation": [
+        0.0,
+        -76.5,
+        0.0
+      ],
+      "fov": 70
+    },
+    {
+      "id": "CAM_WINDSHIELD_BACK",
+      "location": [
+        -2,
+        0.0,
+        1.32
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "fov": 70
+    },
+    {
+      "id": "CAM_MIRROR_RIGHT",
+      "location": [
+        0.62,
+        0.94,
+        0.96
+      ],
+      "rotation": [
+        0.0,
+        76.0,
+        0.0
+      ],
+      "fov": 70
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      -0.46,
+      0.0,
+      1.86
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 1390000
+  }
+}

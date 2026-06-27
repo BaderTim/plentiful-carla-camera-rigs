@@ -1,0 +1,133 @@
+{
+  "vehicle_type": "vehicle.audi.tt",
+  "cameras": [
+    {
+      "id": "CAM_BUMPER_FRONT",
+      "location": [
+        2.04,
+        0.0,
+        0.68
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPPER_FRONT_RIGHT",
+      "location": [
+        1.09,
+        0.99,
+        0.72
+      ],
+      "rotation": [
+        0.0,
+        41.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_MIRROR_RIGHT",
+      "location": [
+        0.42,
+        0.94,
+        1.0
+      ],
+      "rotation": [
+        0.0,
+        96.5,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPER_BACK_RIGHT",
+      "location": [
+        -1.57,
+        0.99,
+        0.84
+      ],
+      "rotation": [
+        0.0,
+        132.5,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPER_BACK",
+      "location": [
+        -2.04,
+        0.0,
+        0.74
+      ],
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPER_BACK_LEFT",
+      "location": [
+        -1.63,
+        -0.99,
+        0.86
+      ],
+      "rotation": [
+        0.0,
+        -132.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_MIRROR_LEFT",
+      "location": [
+        0.46,
+        -0.9,
+        1.04
+      ],
+      "rotation": [
+        0.0,
+        -97.0,
+        0.0
+      ],
+      "fov": 65
+    },
+    {
+      "id": "CAM_BUMPPER_FRONT_LEFT",
+      "location": [
+        1.23,
+        -0.95,
+        0.78
+      ],
+      "rotation": [
+        0.0,
+        -43.0,
+        0.0
+      ],
+      "fov": 65
+    }
+  ],
+  "lidar": {
+    "id": "LIDAR_TOP",
+    "location": [
+      -0.22,
+      0.0,
+      1.5
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "channels": 32,
+    "range": 100.0,
+    "points_per_second": 1390000
+  }
+}
